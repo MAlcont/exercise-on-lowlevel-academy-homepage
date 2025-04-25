@@ -31,8 +31,8 @@ void repstr(char *buf, char *sub, char *rep) {
     if (final_len >= 256) return; //starting editing all matches if possible
     for (int i = match_count - 1; i >= 0; i--) {  //making sure there's space if rep's longer than sub...
         memmove(matches[i].end + len_diff, matches[i].end, strlen(matches[i].end) + 1);
-    for (int j = 0; rep[j]; j++) {  //...for rep extra chars to be copied onto sub and buf
-        matches[i].start[j] = rep[j];
-        }
+        for (int j = 0; rep[j]; j++) {  //...for rep extra chars to be copied onto sub and buf
+            matches[i].start[j] = rep[j];
+            }
     }
 }
