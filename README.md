@@ -1,2 +1,1 @@
-# exercise-on-lowlevel-academy-homepage
-my first C software
+ChatGPT made me do it✊
